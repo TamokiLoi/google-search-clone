@@ -1,0 +1,19 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.link {
+		@apply cursor-pointer hover:underline;
+	}
+
+	.form__inputSearch {
+		@apply flex items-center w-full max-w-md px-5 py-3 mt-5 border border-gray-200 rounded-full hover:shadow-lg focus-within:shadow-lg sm:max-w-xl lg:max-w-2xl;
+	}
+
+	.form__btn {
+		@apply bg-[#f8f9fa] p-3 text-sm text-gray-800 rounded-md ring-gray-200
+		hover:ring-1 focus:outline-none active:ring-gray-300 hover:shadow-md;
+	}
+}
